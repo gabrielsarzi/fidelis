@@ -368,7 +368,7 @@ document.addEventListener('DOMContentLoaded', () => {
     new LoadingAnimation();
 });
 
-// Add some interactive hover effects
+// Add interactive hover effects
 document.addEventListener('DOMContentLoaded', () => {
     // Add hover effect to CTA buttons
     const ctaButtons = document.querySelectorAll('.btn');
@@ -381,23 +381,4 @@ document.addEventListener('DOMContentLoaded', () => {
             this.style.transform = 'translateY(0) scale(1)';
         });
     });
-
-    // Add typing effect to hero title
-    const heroTitle = document.querySelector('.hero-title');
-    if (heroTitle) {
-        const text = heroTitle.textContent;
-        heroTitle.textContent = '';
-        let i = 0;
-        
-        const typeWriter = () => {
-            if (i < text.length) {
-                heroTitle.textContent += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 100);
-            }
-        };
-        
-        setTimeout(typeWriter, 1000);
-    }
 });
-
