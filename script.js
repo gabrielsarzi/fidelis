@@ -1,4 +1,3 @@
-// Scroll Reveal Animation
 class ScrollReveal {
     constructor() {
         this.elements = document.querySelectorAll('.reveal-element');
@@ -31,7 +30,6 @@ class ScrollReveal {
     }
 }
 
-// Header Scroll Effect
 class HeaderScroll {
     constructor() {
         this.header = document.querySelector('.header');
@@ -55,7 +53,6 @@ class HeaderScroll {
     }
 }
 
-// Smooth Scroll for Navigation Links
 class SmoothScroll {
     constructor() {
         this.init();
@@ -75,7 +72,6 @@ class SmoothScroll {
                         top: targetPosition,
                         behavior: 'smooth'
                     });
-                    // Fecha o menu mobile ao clicar em um link
                     const nav = document.querySelector('.nav');
                     const hamburger = document.querySelector('.hamburger');
                     if (nav.classList.contains('active')) {
@@ -88,7 +84,6 @@ class SmoothScroll {
     }
 }
 
-// Hamburger Menu Toggle
 class HamburgerMenu {
     constructor() {
         this.hamburger = document.querySelector('.hamburger');
@@ -97,14 +92,15 @@ class HamburgerMenu {
     }
 
     init() {
-        this.hamburger.addEventListener('click', () => {
-            this.nav.classList.toggle('active');
-            this.hamburger.innerHTML = this.nav.classList.contains('active') ? '✕' : '☰';
-        });
+        if (this.hamburger && this.nav) {
+            this.hamburger.addEventListener('click', () => {
+                this.nav.classList.toggle('active');
+                this.hamburger.innerHTML = this.nav.classList.contains('active') ? '✕' : '☰';
+            });
+        }
     }
 }
 
-// Gallery Lightbox Effect
 class GalleryLightbox {
     constructor() {
         this.galleryItems = document.querySelectorAll('.gallery-item');
@@ -127,7 +123,7 @@ class GalleryLightbox {
         lightbox.className = 'lightbox';
         lightbox.innerHTML = `
             <div class="lightbox-content">
-                <span class="lightbox-close">&times;</span>
+                <span class="lightbox-close">×</span>
                 <img src="${img.src}" alt="${img.alt}">
                 <div class="lightbox-info">
                     <h3>${title}</h3>
@@ -234,7 +230,6 @@ class GalleryLightbox {
     }
 }
 
-// Animated Counter for Stats
 class AnimatedCounter {
     constructor() {
         this.counters = document.querySelectorAll('.stat-number');
@@ -273,7 +268,6 @@ class AnimatedCounter {
     }
 }
 
-// Parallax Effect for Hero Section
 class ParallaxEffect {
     constructor() {
         this.hero = document.querySelector('.hero');
@@ -294,7 +288,42 @@ class ParallaxEffect {
     }
 }
 
-// Loading Animation
+class TestimonialCarousel {
+    constructor() {
+        this.testimonials = document.querySelectorAll('.testimonial');
+        this.current = 0;
+        this.init();
+    }
+
+    init() {
+        setInterval(() => {
+            this.testimonials[this.current].classList.remove('active');
+            this.current = (this.current + 1) % this.testimonials.length;
+            this.testimonials[this.current].classList.add('active');
+        }, 5000);
+    }
+}
+
+class BackToTop {
+    constructor() {
+        this.button = document.querySelector('.back-to-top');
+        this.init();
+    }
+
+    init() {
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                this.button.classList.add('visible');
+            } else {
+                this.button.classList.remove('visible');
+            }
+        });
+        this.button.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+}
+
 class LoadingAnimation {
     constructor() {
         this.init();
@@ -312,7 +341,6 @@ class LoadingAnimation {
     }
 }
 
-// Initialize all components when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     new ScrollReveal();
     new HeaderScroll();
@@ -321,10 +349,11 @@ document.addEventListener('DOMContentLoaded', () => {
     new GalleryLightbox();
     new AnimatedCounter();
     new ParallaxEffect();
+    new TestimonialCarousel();
+    new BackToTop();
     new LoadingAnimation();
 });
 
-// Add interactive hover effects
 document.addEventListener('DOMContentLoaded', () => {
     const ctaButtons = document.querySelectorAll('.btn');
     ctaButtons.forEach(btn => {
