@@ -42,38 +42,6 @@ body {
     align-items: center;
 }
 
-.logo-section {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.logo {
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(135deg, #d4af37, #ffd700);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #000;
-}
-
-.hero-logo {
-    margin: 0 auto 1rem;
-    width: 100px;
-    height: 100px;
-    font-size: 2rem;
-}
-
-.brand-name {
-    font-size: 1.5rem;
-    font-weight: 300;
-    letter-spacing: 2px;
-}
-
 .hamburger {
     display: none;
     background: none;
@@ -167,6 +135,20 @@ body {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+}
+
+.hero-logo {
+    margin: 0 auto 1rem;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #d4af37, #ffd700);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #000;
 }
 
 .hero-title {
@@ -343,6 +325,29 @@ body {
     font-size: 1.1rem;
 }
 
+/* Testimonials */
+.testimonials {
+    padding: 6rem 0;
+    background: #111111;
+}
+
+.testimonial-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial {
+    display: none;
+    text-align: center;
+    padding: 2rem;
+    color: #cccccc;
+    font-size: 1.1rem;
+}
+
+.testimonial.active {
+    display: block;
+}
+
 /* CTA Section */
 .cta-section {
     padding: 6rem 0;
@@ -458,6 +463,27 @@ body {
     padding-top: 2rem;
     border-top: 1px solid #333;
     color: #888;
+}
+
+/* Back to Top */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #d4af37;
+    color: #000;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.back-to-top.visible {
+    opacity: 1;
 }
 
 /* Reveal Animation */
