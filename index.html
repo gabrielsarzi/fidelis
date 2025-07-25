@@ -5,115 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Felipe Fidelis - Barbearia & Cursos</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="logo">FF</div>
-    </div>
-
-    <!-- Cursor Personalizado -->
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
-
     <header class="header">
         <div class="container">
-            <div class="brand-name">Felipe Fidelis</div>
-            <button class="menu-btn">
-                <span class="menu-btn-burger"></span>
-            </button>
+            <div class="logo-section">
+                <div class="logo">FF</div>
+                <div class="brand-name">Felipe Fidelis</div>
+            </div>
+            <button class="hamburger" aria-label="Toggle menu">☰</button>
+            <nav class="nav">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#gallery" class="nav-link">Galeria</a>
+                <a href="#history" class="nav-link">História</a>
+                <a href="#courses" class="nav-link">Cursos</a>
+                <a href="#booking" class="nav-link cta-button">Agende seu corte</a>
+            </nav>
         </div>
     </header>
 
-    <!-- Menu Overlay -->
-    <div class="menu-overlay">
-        <nav class="overlay-nav">
-            <a href="#hero" class="nav-link">Início</a>
-            <a href="#gallery" class="nav-link">Galeria</a>
-            <a href="#video" class="nav-link">História</a>
-            <a href="#cta" class="nav-link cta-button" data-modal="cursos">Cursos</a>
-            <a href="#cta" class="nav-link cta-button" data-modal="agendar">Agende seu corte</a>
-        </nav>
-    </div>
-
-    <section id="hero" class="hero">
-        <div class="container">
-            <div class="hero-content reveal-element">
-                <div class="logo hero-logo">FF</div>
-                <h1 class="hero-title">Mestre da Arte de Cortar</h1>
-                <p class="hero-description">
-                    Com mais de 10 anos de experiência, Felipe Fidelis é especialista em cortes masculinos. Sua paixão vai além do corte, compartilhando conhecimento através de cursos profissionalizantes.
-                </p>
-                <div class="hero-stats">
-                    <div class="stat reveal-element">
-                        <span class="stat-number">1000+</span>
-                        <span class="stat-label">Clientes Satisfeitos</span>
-                    </div>
-                    <div class="stat reveal-element">
-                        <span class="stat-number">10+</span>
-                        <span class="stat-label">Anos de Experiência</span>
-                    </div>
-                    <div class="stat reveal-element">
-                        <span class="stat-number">50+</span>
-                        <span class="stat-label">Alunos Formados</span>
-                    </div>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="logo hero-logo">FF</div>
+            <h1 class="hero-title">Mestre da Arte de Cortar</h1>
+            <p class="hero-description">
+                Com mais de 10 anos de experiência, Felipe Fidelis é especialista em cortes masculinos modernos e clássicos. 
+                Sua paixão pela barbearia vai além do corte - ele também compartilha seu conhecimento através de cursos 
+                profissionalizantes, formando novos talentos na arte da barbearia. Cada corte é uma obra de arte, 
+                cada cliente uma nova história de transformação.
+            </p>
+            <div class="hero-stats reveal-element">
+                <div class="stat">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">Clientes Satisfeitos</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Anos de Experiência</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Alunos Formados</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="gallery" class="gallery">
+    <section id="gallery" class="gallery reveal-element">
         <div class="container">
-            <h2 class="section-title reveal-element">Nossos Trabalhos</h2>
-            <p class="section-subtitle reveal-element">Cada corte conta uma história única</p>
+            <h2 class="section-title">Nossos Trabalhos</h2>
+            <p class="section-subtitle">Cada corte conta uma história única</p>
             <div class="gallery-grid">
-                <!-- Use imagens reais aqui -->
-                <div class="gallery-item reveal-element">
-                    <img src="https://images.unsplash.com/photo-1599338263258-a82b79424758?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Corte Moderno">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Ambiente Moderno">
                     <div class="gallery-overlay">
-                        <h3>Corte Fade</h3>
-                        <p>Precisão e estilo no degradê.</p>
+                        <h3>Ambiente Moderno</h3>
+                        <p>Espaço aconchegante e profissional</p>
                     </div>
                 </div>
-                <div class="gallery-item reveal-element">
-                    <img src="https://images.unsplash.com/photo-1567894340345-a61b341f23d2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Barba Modelada">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Cortes Modernos">
                     <div class="gallery-overlay">
-                        <h3>Barba Alinhada</h3>
-                        <p>Design e cuidado para sua barba.</p>
+                        <h3>Cortes Modernos</h3>
+                        <p>Tendências e estilos únicos</p>
                     </div>
                 </div>
-                <div class="gallery-item reveal-element">
-                    <img src="https://images.unsplash.com/photo-1622288399347-a8b2a3a5e8e2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Ambiente da Barbearia">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Equipamentos Premium">
                     <div class="gallery-overlay">
-                        <h3>Ambiente Premium</h3>
-                        <p>Conforto e profissionalismo.</p>
+                        <h3>Equipamentos Premium</h3>
+                        <p>Ferramentas de alta qualidade</p>
                     </div>
                 </div>
-                <div class="gallery-item reveal-element">
-                    <img src="https://images.unsplash.com/photo-1621607512169-6a36225b8716?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=600" alt="Corte Clássico">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Estilos Variados">
                     <div class="gallery-overlay">
-                        <h3>Estilo Clássico</h3>
-                        <p>Elegância que nunca sai de moda.</p>
+                        <h3>Estilos Variados</h3>
+                        <p>Do clássico ao contemporâneo</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="video" class="video-section">
+    <section id="history" class="video-section reveal-element">
         <div class="container">
-            <h2 class="section-title reveal-element">Minha História</h2>
-            <p class="section-subtitle reveal-element">Conheça a jornada que me trouxe até aqui</p>
-            <div class="video-container reveal-element">
-                <iframe 
-                    src="https://www.youtube.com/embed/ZuiV8CLCVuE" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
+            <h2 class="section-title">Minha História</h2>
+            <p class="section-subtitle">Conheça a jornada que me trouxe até aqui</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/ZuiV8CLCVuE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <p class="video-description reveal-element">
+            <p class="video-description">
                 Neste vídeo, compartilho minha paixão pela barbearia, desde os primeiros passos até me tornar 
                 referência na área. Descubra como a dedicação e o amor pelo que faço transformaram não apenas 
                 cabelos, mas vidas inteiras.
@@ -121,75 +105,41 @@
         </div>
     </section>
 
-    <section id="cta" class="cta-section">
+    <section id="booking" class="cta-section reveal-element">
         <div class="container">
-            <h2 class="cta-title reveal-element">Pronto para Transformar seu Visual?</h2>
-            <p class="cta-description reveal-element">
+            <h2 class="cta-title">Pronto para Transformar seu Visual?</h2>
+            <p class="cta-description">
                 Agende seu horário ou conheça nossos cursos profissionalizantes
             </p>
             <div class="cta-buttons">
-                <button class="btn btn-primary reveal-element" data-modal="agendar">Agendar Corte</button>
-                <button class="btn btn-secondary reveal-element" data-modal="cursos">Ver Cursos</button>
+                <a href="#booking" class="btn btn-primary">Agendar Corte</a>
+                <a href="#courses" class="btn btn-secondary">Ver Cursos</a>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container footer-content">
-            <div class="footer-section footer-contact reveal-element">
-                <h4 class="footer-title">Contato</h4>
-                <p>Entre em contato para agendamentos e dúvidas.</p>
-                <a href="tel:+5511999999999" class="contact-link">📱 (11) 99999-9999</a>
-                <a href="mailto:contato@felipefidelis.com" class="contact-link">📧 contato@felipefidelis.com</a>
-                <p class="contact-address">📍 São Paulo, SP</p>
-            </div>
-            <div class="footer-section footer-social reveal-element">
-                <h4 class="footer-title">Siga-me</h4>
-                <p>Acompanhe meu trabalho e novidades nas redes sociais.</p>
-                <div class="social-links">
-                    <a href="#" class="social-link" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg>
-                    </a>
-                    <a href="#" class="social-link" aria-label="Facebook">
-                        <svg viewBox="0 0 24 24"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.81C10.44 7.31 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" /></svg>
-                    </a>
-                     <a href="#" class="social-link" aria-label="YouTube">
-                        <svg viewBox="0 0 24 24"><path d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.73,18.78 17.93,18.84C17.13,18.91 16.44,18.94 15.84,18.94L15,19C12.81,19 11.2,18.84 10.17,18.56C9.27,18.31 8.69,17.73 8.44,16.83C8.31,16.36 8.22,15.73 8.16,14.93C8.09,14.13 8.06,13.44 8.06,12.84L8,12C8,9.81 8.16,8.2 8.44,7.17C8.69,6.27 9.27,5.69 10.17,5.44C10.64,5.31 11.27,5.22 12.07,5.16C12.87,5.09 13.56,5.06 14.16,5.06L15,5C17.19,5 18.8,5.16 19.83,5.44C20.73,5.69 21.31,6.27 21.56,7.17Z" /></svg>
-                    </a>
+    <footer id="courses" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>📱 (11) 99999-9999</p>
+                    <p>📧 contato@felipefidelis.com</p>
+                    <p>📍 São Paulo, SP</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="https://instagram.com" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="https://facebook.com" class="social-link"><i class="fab fa-facebook"></i> Facebook</a>
+                        <a href="https://youtube.com" class="social-link"><i class="fab fa-youtube"></i> YouTube</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2025 Felipe Fidelis. Todos os direitos reservados.</p>
+            <div class="footer-bottom">
+                <p>© 2025 Felipe Fidelis. Todos os direitos reservados.</p>
+            </div>
         </div>
     </footer>
-
-    <!-- Modal Base -->
-    <div class="modal" id="agendar-modal">
-        <div class="modal-content">
-            <button class="modal-close">×</button>
-            <h3>Agende seu Corte</h3>
-            <p>Para garantir seu horário, entre em contato diretamente pelo WhatsApp. Clique no botão abaixo para iniciar a conversa!</p>
-            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar um corte." target="_blank" class="btn btn-primary">Agendar via WhatsApp</a>
-        </div>
-    </div>
-
-    <div class="modal" id="cursos-modal">
-        <div class="modal-content">
-            <button class="modal-close">×</button>
-            <h3>Cursos Profissionalizantes</h3>
-            <p>Torne-se um barbeiro de sucesso! Ofereço cursos completos, do básico ao avançado, com aulas práticas e teóricas.</p>
-            <ul>
-                <li>✓ Técnicas de Fade e Tesoura</li>
-                <li>✓ Design de Barba</li>
-                <li>✓ Biossegurança e Atendimento ao Cliente</li>
-                <li>✓ Marketing para Barbearias</li>
-            </ul>
-            <a href="https://wa.me/5511999999999?text=Olá! Tenho interesse nos cursos de barbearia." target="_blank" class="btn btn-secondary">Quero Saber Mais</a>
-        </div>
-    </div>
-
-
-    <script src="script.js"></script>
 </body>
 </html>
