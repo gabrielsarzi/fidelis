@@ -117,7 +117,7 @@ body {
     background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
     position: relative;
     overflow: hidden;
-    padding-top: 120px; /* Aumentado para evitar sobreposição */
+    padding-top: 120px;
 }
 
 .hero::before {
@@ -140,17 +140,12 @@ body {
 }
 
 .hero-logo {
-    margin: 0 auto 2rem; /* Aumentado para mais espaço */
+    margin: 0 auto 2rem;
     width: 100px;
     height: 100px;
-    background: linear-gradient(135deg, #d4af37, #ffd700);
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 2rem;
-    color: #000;
+    object-fit: cover; /* Garante que a imagem preencha o espaço */
+    display: block;
 }
 
 .hero-title {
@@ -547,7 +542,7 @@ body {
     }
     
     .hero {
-        padding-top: 140px; /* Aumentado para mobile */
+        padding-top: 140px;
     }
     
     .hero-stats {
