@@ -38,8 +38,9 @@ body {
 
 .header .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .hamburger {
@@ -56,6 +57,7 @@ body {
     display: flex;
     gap: 2rem;
     align-items: center;
+    justify-content: center;
 }
 
 .nav.active {
@@ -115,7 +117,7 @@ body {
     background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
     position: relative;
     overflow: hidden;
-    padding-top: 80px;
+    padding-top: 120px; /* Aumentado para evitar sobreposição */
 }
 
 .hero::before {
@@ -138,7 +140,7 @@ body {
 }
 
 .hero-logo {
-    margin: 0 auto 1rem;
+    margin: 0 auto 2rem; /* Aumentado para mais espaço */
     width: 100px;
     height: 100px;
     background: linear-gradient(135deg, #d4af37, #ffd700);
@@ -342,10 +344,18 @@ body {
     padding: 2rem;
     color: #cccccc;
     font-size: 1.1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    transition: background 0.3s ease;
 }
 
 .testimonial.active {
     display: block;
+}
+
+.testimonial:hover {
+    background: rgba(212, 175, 55, 0.1);
 }
 
 /* CTA Section */
@@ -421,6 +431,10 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 3rem;
     margin-bottom: 3rem;
+}
+
+.footer-section {
+    text-align: center;
 }
 
 .footer-section h3 {
@@ -502,6 +516,9 @@ body {
 @media (max-width: 768px) {
     .hamburger {
         display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
     
     .nav {
@@ -530,7 +547,7 @@ body {
     }
     
     .hero {
-        padding-top: 100px;
+        padding-top: 140px; /* Aumentado para mobile */
     }
     
     .hero-stats {
@@ -556,7 +573,6 @@ body {
     .footer-content {
         grid-template-columns: 1fr;
         gap: 2rem;
-        text-align: center;
     }
     
     .footer-section {
@@ -583,7 +599,7 @@ body {
     }
     
     .hero {
-        padding: 120px 0 2rem;
+        padding: 160px 0 2rem;
     }
     
     .hero-description {
