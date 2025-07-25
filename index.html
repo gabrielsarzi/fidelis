@@ -3,7 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Felipe Fidelis - Barbearia e Cursos Profissionalizantes em São Paulo. Especialista em cortes masculinos modernos e clássicos.">
+    <meta name="keywords" content="barbearia, cortes masculinos, cursos de barbearia, São Paulo">
+    <meta name="author" content="Felipe Fidelis">
+    <meta property="og:title" content="Felipe Fidelis - Barbearia & Cursos">
+    <meta property="og:description" content="Especialista em cortes masculinos e cursos profissionalizantes em São Paulo. Transforme seu visual hoje!">
+    <meta property="og:image" content="https://seu-usuario.github.io/felipefidelis-barber/og-image.jpg">
+    <meta property="og:url" content="https://seu-usuario.github.io/felipefidelis-barber">
+    <meta property="og:type" content="website">
     <title>Felipe Fidelis - Barbearia & Cursos</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="script.js" defer></script>
@@ -11,16 +20,12 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="logo-section">
-                <div class="logo">FF</div>
-                <div class="brand-name">Felipe Fidelis</div>
-            </div>
             <button class="hamburger" aria-label="Toggle menu">☰</button>
             <nav class="nav">
                 <a href="#home" class="nav-link">Início</a>
                 <a href="#gallery" class="nav-link">Galeria</a>
                 <a href="#history" class="nav-link">História</a>
-                <a href="#courses" class="nav-link">Cursos</a>
+                <a href="#testimonials" class="nav-link">Depoimentos</a>
                 <a href="#booking" class="nav-link cta-button">Agende seu corte</a>
             </nav>
         </div>
@@ -59,24 +64,31 @@
             <p class="section-subtitle">Cada corte conta uma história única</p>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="https://raw.githubusercontent.com/gabrielsarzi/fidelis/refs/heads/main/fidelis.jpeg" alt="Ambiente Moderno">
+                    <img src="https://via.placeholder.com/400x300" alt="Ambiente Moderno" loading="lazy">
                     <div class="gallery-overlay">
                         <h3>Ambiente Moderno</h3>
                         <p>Espaço aconchegante e profissional</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://raw.githubusercontent.com/gabrielsarzi/fidelis/refs/heads/main/fidelis.jpeg" alt="Cortes Modernos">
+                    <img src="https://via.placeholder.com/400x300" alt="Cortes Modernos" loading="lazy">
                     <div class="gallery-overlay">
                         <h3>Cortes Modernos</h3>
                         <p>Tendências e estilos únicos</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://raw.githubusercontent.com/gabrielsarzi/fidelis/refs/heads/main/fidelis.jpeg" alt="Equipamentos Premium">
+                    <img src="https://via.placeholder.com/400x300" alt="Equipamentos Premium" loading="lazy">
                     <div class="gallery-overlay">
                         <h3>Equipamentos Premium</h3>
                         <p>Ferramentas de alta qualidade</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Estilos Variados" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Estilos Variados</h3>
+                        <p>Do clássico ao contemporâneo</p>
                     </div>
                 </div>
             </div>
@@ -95,6 +107,24 @@
                 referência na área. Descubra como a dedicação e o amor pelo que faço transformaram não apenas 
                 cabelos, mas vidas inteiras.
             </p>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials reveal-element">
+        <div class="container">
+            <h2 class="section-title">O que Nossos Clientes Dizem</h2>
+            <p class="section-subtitle">Veja o que nossos clientes falam sobre nossos serviços</p>
+            <div class="testimonial-carousel">
+                <div class="testimonial active">
+                    <p>"Melhor corte que já fiz! Ambiente top e profissional." - João S.</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Felipe transformou meu visual, recomendo!" - Pedro M.</p>
+                </div>
+                <div class="testimonial">
+                    <p>"O curso de barbearia mudou minha carreira!" - Lucas R.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -134,5 +164,7 @@
             </div>
         </div>
     </footer>
+
+    <button class="back-to-top" aria-label="Voltar ao topo">↑</button>
 </body>
 </html>
