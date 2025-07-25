@@ -142,8 +142,8 @@ body {
 .hero-logo {
     margin: 0 auto 2rem;
     width: 200px;
-    height: 1129px;
-    border-radius: 0%;
+    height: 129px;
+    border-radius: 0;
     object-fit: cover; /* Garante que a imagem preencha o espaço */
     display: block;
     background: none;
@@ -587,6 +587,11 @@ body {
     .social-link {
         font-size: 1.2rem;
     }
+    
+    .hero-logo {
+        width: 150px;
+        height: 97px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -608,5 +613,10 @@ body {
     
     .gallery-item {
         aspect-ratio: 3/2;
+    }
+    
+    .hero-logo {
+        width: 120px;
+        height: 78px;
     }
 }
